@@ -3,40 +3,67 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #004080;
+    background-color: #028174;
     color: white;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .hero {
     padding: 50px;
-    background-color: #f4f4f4;
+    background-color: #e3f2f1;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #004080;
-    color: white;
-    text-decoration: none;
+.about, .news {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-item {
+    width: 40%;
+    background: #d1ede9;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -44,7 +71,5 @@ footer {
     background-color: #222;
     color: white;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
 }
